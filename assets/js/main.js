@@ -2,9 +2,12 @@ function swap() {
 
     // Take input from the user
     let a = parseInt(document.getElementById("valueOne").value);
-    console.log(a);
     let b = parseInt(document.getElementById("valueTwo").value);
-    console.log(b);
+
+    // Before the Variable 1 & Variable 2 swap
+    console.log(`Before Swap: Variable 1 = ${a}, Variable 2 = ${b}`);
+
+    document.querySelector("#p1").innerHTML = `Before Swap: Variable 1 = ${a}, Variable 2 = ${b}`;
 
     // Create a temporary variable
     let temp;
@@ -14,10 +17,10 @@ function swap() {
     a = b;
     b = temp;
 
-    console.log(`The value of variable-1 after swapping: ${a}`);
-    console.log(`The value of variable-2 after swapping: ${b}`);
 
-    document.querySelector("#p1").innerHTML = `The value of variable-1 after swapping: ${a}`;
-    document.querySelector("#p2").innerHTML = `The value of variable-2 after swapping: ${b}`;
+    // After the Variable 1 & Variable 2 swap
+    console.log(`After Swap: Variable 1 = ${a}, Variable 2 = ${b}`);
+
+    document.querySelector("#p2").innerHTML = `After Swap: Variable 1 = ${a}, Variable 2 = ${b}`;
 
 }
